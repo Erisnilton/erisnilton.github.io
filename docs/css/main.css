@@ -26,8 +26,21 @@ body {
   padding: 0;
 }
 
+.avatar {
+  width: 10em; 
+  margin: 0 auto;
+}
+
+.avatar img {
+  border-radius: 50%;
+}
+
 .name_profile{
-  font-size: 5.27086383601757vw !important;
+  font-size: clamp(3.236rem, 4.21vw, 100px) !important;
+}
+
+.description {
+  font-size: clamp(1.618rem, 1.68vw, 3.236rem) !important;
 }
 
 /* ------------------------------------------------------------------- 
@@ -127,15 +140,6 @@ h6, .h6 {
 
 p img {
   margin: 0;
-}
-
-.avatar {
-  width: 10em; 
-  margin: 0 auto;
-}
-
-.avatar img {
-  border-radius: 50%;
 }
 
 p.lead {
@@ -1717,7 +1721,6 @@ body.menu-is-open {
   margin: 0 0 4.2rem 0;
   padding: 0;
   list-style: none;
-  counter-reset: ctr;
 }
 
 .header-nav__list li {
@@ -1730,17 +1733,7 @@ body.menu-is-open {
   position: relative;
 }
 
-.header-nav__list a::before {
-  display: block;
-  content: counter(ctr, decimal-leading-zero) ".";
-  counter-increment: ctr;
-  font-family: "Montserrat", sans-serif;
-  font-size: 11px;
-  color: rgba(255, 255, 255, 0.25);
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
-  position: relative;
-}
+
 
 .header-nav__list a:hover::before {
   color: #793ea5;
@@ -2693,7 +2686,6 @@ html.no-csstransitions .home-content__main {
  * ------------------------------------------------------------------- */
 .process {
   margin-top: 6.6rem;
-  counter-reset: ctr;
 }
 
 .process h4 {
@@ -2702,24 +2694,6 @@ html.no-csstransitions .home-content__main {
   position: relative;
 }
 
-.process h4::before {
-  content: counter(ctr);
-  counter-increment: ctr;
-  display: block;
-  font-family: "Montserrat", sans-serif;
-  font-size: 2.1rem;
-  font-weight: 700;
-  text-align: center;
-  color: #FFFFFF;
-  background-color: #793ea5;
-  height: 48px;
-  width: 48px;
-  line-height: 48px;
-  border-radius: 50%;
-  position: absolute;
-  left: 0;
-  top: -5px;
-}
 
 .item-process {
   position: relative;
@@ -3468,6 +3442,9 @@ html.no-csstransitions .home-content__main {
   line-height: 1.636;
   margin-top: 9rem;
 }
+.contact-numbers {
+  font-size: clamp(1.618rem, 1.68vw, 3.236rem);
+}
 
 .contact-main [class*="contact-"] {
   margin-bottom: 0;
@@ -3478,7 +3455,7 @@ html.no-csstransitions .home-content__main {
 }
 
 .contact-email a {
-  font-size: 9rem;
+  font-size: 3.37vw;
   font-weight: 700;
   line-height: 1.2;
   color: #FFFFFF;
@@ -3496,7 +3473,6 @@ html.no-csstransitions .home-content__main {
 .contact-social {
   list-style: none;
   display: inline-block;
-  margin: 4.2rem 0 0 0;
   font-size: 4.2rem;
 }
 
