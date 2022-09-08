@@ -42,10 +42,6 @@ body {
 .description {
   font-size: clamp(1.618rem, 1.68vw, 3.236rem) !important;
 }
-.icon-github {
-  color: #fff;
-  font-size: clamp(2.236rem, 2.21vw, 100px) !important;
-}
 
 .button-demo {
   background: #121212;
@@ -53,11 +49,12 @@ body {
   border-radius: 0.5em;
   color: rgba(255, 255, 255, 0.3);
   cursor: pointer;
-  display: inline-block;
+  display: block;
   font-size:clamp(1.236rem, 1.21vw, 100px) !important;
   font-weight: 600;
   line-height: 1.618;
   padding: 0.618em 1.618em;
+  margin-top: calc(1.618em / 4);
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
@@ -65,9 +62,6 @@ body {
 }
 
 .card__footer{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   width: 100%;
   list-style: none;
 }
