@@ -42,6 +42,84 @@ body {
 .description {
   font-size: clamp(1.618rem, 1.68vw, 3.236rem) !important;
 }
+.icon-github {
+  color: #fff;
+  font-size: clamp(2.236rem, 2.21vw, 100px) !important;
+}
+
+.button-demo {
+  background: #121212;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 0.5em;
+  color: rgba(255, 255, 255, 0.3);
+  cursor: pointer;
+  display: inline-block;
+  font-size:clamp(1.236rem, 1.21vw, 100px) !important;
+  font-weight: 600;
+  line-height: 1.618;
+  padding: 0.618em 1.618em;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
+}
+
+.card__footer{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  list-style: none;
+}
+
+
+.card__content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-items: center;
+  grid-gap: 1.5rem;
+  }
+
+.row_card{
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+.card {
+  border-radius: 5px;
+  box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0.22);
+  padding: 30px;
+  width: 400px;
+  transition: all 0.3s ease-out;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  cursor: pointer;
+}
+ 
+.card p {
+  color: #a3a5ae;
+  font-size: 16px;
+}
+ 
+.card-img-top {
+  max-width: 286px;
+  max-height: 180px;
+}
+
+.blue {
+  border-left: 3px solid #4895ff;
+}
+ 
+.green {
+  border-left: 3px solid #3bb54a;
+}
+ 
+.red {
+  border-left: 3px solid #b3404a;
+}
 
 /* ------------------------------------------------------------------- 
  * ## links
