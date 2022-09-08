@@ -72,8 +72,10 @@ body {
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
   justify-items: center;
-  grid-gap: 1.5rem;
-  }
+  grid-gap: 1rem;
+  margin-top: 1.618em;
+  margin-left: 10rem;
+}
 
 .row_card{
   display: flex;
