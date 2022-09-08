@@ -177,6 +177,7 @@ h5, .h5, h6, .h6 {
   .card__content {
     grid-template-columns: 1fr;
   }
+  
 }
 
 h1, .h1 {
